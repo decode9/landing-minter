@@ -1,0 +1,38 @@
+.expandBodyText {
+  font-size: 1.4vw;
+  padding-top: 1vw;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+  text-align: left;
+  line-height: 3vw;
+}
+.listTitle{
+  font-size: 1.2vw;
+  padding-top: 1vw;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: left;
+  line-height: 3vw;
+}
+
+.listBodyText{
+  font-size: 1.2vw;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: left;
+  line-height: 2vw;
+}
+
+@media (max-width: 1280px){
+  .expandBodyText {
+    font-size: 1.8vw;
+  }
+}
+
+@media (max-width: 768px) {
+  .expandBodyText {
+    font-size: 3vw;
+    line-height: 5vw;
+    padding-top: 2vw;
+  }
+}

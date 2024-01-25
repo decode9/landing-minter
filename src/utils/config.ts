@@ -1,0 +1,2 @@
+export const nftContractAddress = '0x4a409c849f369ef415086b2f5dbfaa8029d6cc7b'
+export const nftInsiders = '0x13834996b45b47f804e631f9e84c86a2a691d53d'

@@ -1,0 +1,94 @@
+@import '../../../../../public/styles/index.scss';
+
+._mainContainer {
+  display: flex;
+  padding-top: 10%;
+  width: 100%;
+}
+
+._titleContainer {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+._infoText {
+  font-size: 2vw;
+  color: gray;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._titleText {
+  font-size: 7vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+  margin-bottom: 2vw;
+}
+
+._text {
+  font-size: 1.5vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._cardContainer {
+  width: 50%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._card {
+  width: 90%;
+  padding: 5%;
+  box-shadow: -4px 4px 0px #f4e254;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  transform: rotateZ(20deg);
+}
+
+._innerCard {
+  border: 2px solid #e4dc7c;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 20% 15%;
+  height: 100%;
+}
+._cardText {
+  color: black;
+  font-size: 1.8vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._strokeText {
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+
+._image {
+  width: 80%;
+}
+
+@include responsive(md) {
+  ._mainContainer {
+    flex-direction: column;
+  }
+
+  ._titleContainer {
+    width: 100%;
+    margin-bottom: 7vw;
+  }
+
+  ._text {
+    font-size: 3vw;
+  }
+
+  ._cardContainer {
+    width: 100%;
+    margin-bottom: 7vw;
+  }
+  ._image {
+    width: 80%;
+  }
+}

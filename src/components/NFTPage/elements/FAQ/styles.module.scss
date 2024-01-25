@@ -1,0 +1,32 @@
+@import '../../../../../public/styles/index.scss';
+
+._faqContainer {
+  padding: 5% 0;
+}
+
+._faqTitle {
+  font-size: 2.3vw;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: center;
+  margin-bottom: 2vw;
+  font-weight: bolder;
+  color: black;
+  text-transform: uppercase;
+}
+
+._faqs {
+  padding: 3% 5%;
+}
+
+@include responsive(xl) {
+  ._faqTitle {
+    font-size: 4vw;
+  }
+}
+
+@include responsive(md) {
+  ._faqTitle {
+    font-size: 5vw;
+  }
+}

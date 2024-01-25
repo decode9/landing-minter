@@ -1,0 +1,104 @@
+@import '../../../../../public/styles/index.scss';
+
+._responsiveHeader {
+  display: none;
+}
+._logoContainer {
+  height: 100%;
+}
+
+._image {
+  max-height: 100%;
+  cursor: pointer;
+  width: auto;
+}
+
+._header {
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  height: 90px;
+  padding: 1rem 2rem;
+  background-color: transparent;
+}
+
+._menuExpand {
+  display: block;
+  position: absolute;
+  left: 1rem;
+  width: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+._closeText {
+  font-family: sans-serif;
+  font-size: 1.5rem;
+}
+
+._navigation {
+  width: 100%;
+  text-align: center;
+  height: 100%;
+  overflow: auto;
+}
+
+._navigationList {
+  list-style: none;
+  padding: 0;
+}
+._navigationItem {
+  font-family: 'Nunito', sans-serif;
+  font-size: 1.2rem;
+  margin: 1.5rem 0;
+  letter-spacing: 0.1rem;
+  cursor: pointer;
+}
+
+@keyframes show {
+  from {
+    max-height: 0;
+  }
+  to {
+    max-height: 100%;
+  }
+}
+
+@keyframes hide {
+  from {
+    height: auto;
+  }
+  to {
+    height: 0;
+  }
+}
+
+@include responsive(md) {
+  
+  ._responsiveHeader {
+    display: block;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: #fceb6f;
+    overflow: none;
+    z-index: 10;
+  }
+
+  ._showMenu {
+    max-height: 100%;
+    transition: all 1.5s;
+    display: block;
+  }
+  ._hideMenu {
+    max-height: 0;
+    transition: all 1s;
+    display: none;
+  }
+}

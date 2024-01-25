@@ -1,0 +1,63 @@
+@import '../../../public/styles/index.scss';
+
+._footer {
+  box-sizing: border-box;
+  height: 150px;
+  padding: 1rem 4rem;
+  margin-top: 4rem;
+  background-color: black;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-weight: lighter;
+  font-family: 'Monserrat', sans-serif;
+  color: white;
+}
+
+._logoContainer {
+  height: 60%;
+}
+
+._leftContent {
+  height: 100%;
+}
+._rightContent {
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+._socialContainer {
+  width: 40px;
+  height: 40px;
+  margin: 0 1rem;
+}
+
+._copyright {
+  font-style: italic;
+  margin-top: 1rem;
+}
+
+._socialImage {
+  width: 40px;
+  height: 40px;
+}
+
+._image {
+  max-height: 100%;
+  cursor: pointer;
+  width: auto;
+}
+
+@include responsive(md) {
+  ._logoContainer {
+    height: 80px;
+  }
+  ._footer {
+    height: auto;
+    flex-direction: column;
+    text-align: center;
+  }
+  ._leftContent {
+    margin-bottom: 5vw;
+  }
+}

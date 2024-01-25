@@ -1,0 +1,67 @@
+@import '../../../../../public/styles/index.scss';
+
+._mainContainer {
+  padding-top: 10%;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+._textContainer {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+._textContent {
+  margin: 2rem 0;
+}
+
+._imageContainer {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+._textTitle {
+  margin-bottom: 1rem;
+  font-size: 2vw;
+  text-transform: uppercase;
+  color: black;
+  text-align: center;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._text {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._utilItem {
+  margin: 3.5vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+  font-size: 1.5vw;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+._imgPointer{
+  margin-right: 2vw;
+}
+
+._utilList {
+  margin-top: 6vw;
+}
+
+
+@include responsive(md) {
+  ._textTitle{
+    font-size: 6vw;
+  }
+  ._utilItem{
+    font-size: 3.5vw;
+    margin: 5vw 0;
+  }
+  ._imgPointer{
+    width: 8vw;
+  }
+}

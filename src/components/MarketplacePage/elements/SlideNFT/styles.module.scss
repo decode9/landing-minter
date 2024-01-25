@@ -1,0 +1,41 @@
+@import '../../../../../public/styles/index.scss';
+
+._mainContainer {
+  padding-top: 10%;
+  width: 100%;
+}
+
+._textContent {
+  margin: 4vw 0;
+}
+
+._imageContainer {
+  width: 50%;
+  padding: 0 5%;
+  box-sizing: border-box;
+}
+
+._textTitle {
+  margin-bottom: 3vw;
+  font-size: 2vw;
+  text-align: center;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._text {
+  margin-bottom: 1vw;
+  font-size: 1vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._image {
+  max-width: 100%;
+}
+
+@include responsive(md) {
+  ._textTitle{
+    font-size: 5vw;
+  }
+}

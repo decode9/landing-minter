@@ -1,0 +1,7 @@
+export { default as MintNFT } from './MintNFT'
+export { default as Disclaimer } from './Disclaimer'
+export { default as InfoShow } from './InfoShow'
+export { default as Utility } from './Utility'
+export { default as AdditionalInfo } from './AdditionalInfo'
+export { default as Authenticity } from './Authenticity'
+export { default as FAQ } from './FAQ'

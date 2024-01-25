@@ -1,0 +1,105 @@
+@import '../../../../../../../public/styles/index.scss';
+
+._mintButton {
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  background-color: #fff080;
+  color: black;
+  border: none;
+  border-radius: 3rem;
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+    color: #fff080;
+  }
+}
+
+._errorContainer {
+  padding: 2rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
+
+._errorText {
+  font-size: 1vw;
+  color: black;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._transactionError {
+  font-size: 1.3rem;
+  color: red;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+  width: 70%;
+  text-align: left;
+  overflow: hidden;
+}
+
+._nftContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+._nftTitle {
+  font-size: 1.5rem;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+  color: black;
+  margin-bottom: 2rem;
+}
+
+._mainSold {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 5%;
+}
+
+._soldTitle {
+  font-size: 1.5vw;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: left;
+  margin-bottom: 2vw;
+  font-weight: lighter;
+}
+
+._mainButton {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._buttonMarket {
+  margin: 2rem;
+}
+
+._textPrice {
+  font-size: 0.8vw;
+  font-style: italic;
+  color: gray;
+  text-align: center;
+}
+
+@include responsive(md) {
+  ._errorText {
+    font-size: 4vw;
+    text-align: center;
+  }
+  ._errorContainer {
+    display: flex;
+    align-items: center;
+  }
+  ._textPrice {
+    font-size: 3vw;
+  }
+}

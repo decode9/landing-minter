@@ -1,0 +1,76 @@
+@import '../../../../../public/styles/index.scss';
+
+._mainContainer {
+  padding-top: 10%;
+  width: 100%;
+  padding: 5%;
+  background-color: black;
+  border-radius: 5rem;
+  margin: 2rem 0;
+  box-sizing: border-box;
+}
+
+._textContainer {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+._textContent {
+  margin: 2rem 0;
+}
+
+._imageContainer {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+._textTitle {
+  margin-bottom: 1rem;
+  font-size: 2vw;
+  text-transform: uppercase;
+  color: white;
+  text-align: center;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._text {
+  margin: 2vw 0;
+  color: white;
+  font-size: 1.5vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+  text-transform: uppercase;
+}
+
+._utilItem {
+  margin: 3.5vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+  font-size: 1.5vw;
+}
+
+._utilList {
+  margin-top: 6vw;
+}
+
+._link {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  img {
+    width: 1.2vw;
+    height: 1.2vw;
+    margin-left: 0.5vw;
+  }
+}
+
+@include responsive(md) {
+  ._mainContainer {
+    border-radius: 2rem;
+  }
+  ._textTitle{
+    font-size: 5vw;
+  }
+  ._text{
+    font-size: 3vw;
+    margin: 4vw 0;
+  }
+}

@@ -1,0 +1,78 @@
+@import '../../../../../../../public/styles/index.scss';
+
+._expandContainer {
+  padding-bottom: 2vw;
+  height: auto;
+}
+
+._expandHeader {
+  padding-top: 1vw;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+._expandTitleText {
+  font-size: 1.6vw;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: black;
+  text-align: left;
+  font-weight: normal;
+}
+
+._expandBodyText {
+  font-size: 1.4vw;
+  padding-top: 1vw;
+  font-family: 'Monserrat', Verdana, Geneva, Tahoma, sans-serif;
+  color: #333;
+  text-align: left;
+  line-height: 3vw;
+}
+
+._expandBody {
+  overflow: hidden;
+}
+
+._collapseContent {
+  max-height: 0;
+  transition: max-height 1s;
+}
+
+._expandedContent {
+  max-height: 1000px;
+  transition: max-height 1.5s;
+}
+
+@include responsive(xl) {
+  ._expandTitleText {
+    font-size: 2vw;
+  }
+
+  ._expandBodyText {
+    font-size: 1.8vw;
+  }
+}
+
+@include responsive(md) {
+  ._expandTitleText {
+    font-size: 4vw;
+  }
+  ._expandBodyText {
+    font-size: 3vw;
+    line-height: 5vw;
+
+    padding-top: 2vw;
+  }
+  ._expandContainer {
+    padding-bottom: 4vw;
+  }
+
+  ._expandHeader {
+    padding-top: 2vw;
+  }
+
+  ._pointer {
+    width: 8vw;
+  }
+}

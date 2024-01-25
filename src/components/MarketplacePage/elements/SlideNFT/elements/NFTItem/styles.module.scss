@@ -1,0 +1,172 @@
+@import '../../../../../../../public/styles/index.scss';
+
+._mainContainer {
+  display: flex;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+  max-height: 550px;
+}
+
+._textContainer {
+  width: 50%;
+  padding: 2%;
+  box-sizing: border-box;
+}
+
+._imageContainer {
+  max-width: 50%;
+  height: 100%;
+  padding: 2%;
+  box-sizing: border-box;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+._image {
+  height: 100%;
+}
+
+._select {
+  padding: 0.5rem 2rem;
+  background: white;
+  margin-left: 1rem;
+  border: 1px solid black;
+  border-radius: 1rem;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+._textTitle {
+  margin-bottom: 1rem;
+  font-size: 2vw;
+  text-align: left;
+  text-transform: uppercase;
+  color: black;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._infoText {
+  font-size: 1vw;
+  margin-bottom: 1vw;
+  color: gray;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._text {
+  margin-bottom: 1rem;
+  font-size: 1vw;
+
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._selectBox {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  ._text {
+    margin: 0;
+  }
+}
+
+._mintButton {
+  padding: 1rem 4rem;
+  font-size: 1.5rem;
+  background-color: #fff080;
+  color: black;
+  border: none;
+  border-radius: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin: 2rem auto;
+  margin-bottom: 1rem;
+  transition: all 0.5s;
+  cursor: pointer;
+  &:hover {
+    background-color: black;
+    color: #fff080;
+  }
+}
+
+._card {
+  width: 90%;
+  padding: 5%;
+  box-shadow: -4px 4px 0px #f4e254;
+  border-radius: 1rem;
+  box-sizing: border-box;
+  text-align: center;
+  transform: rotateZ(20deg);
+}
+
+._innerCard {
+  border: 2px solid #e4dc7c;
+  box-sizing: border-box;
+  width: 100%;
+  border-radius: 1rem;
+  padding: 20% 15%;
+  height: 100%;
+}
+._cardText {
+  color: black;
+  font-size: 1.8vw;
+  font-family: 'Monserrat', Geneva, Tahoma, sans-serif;
+}
+
+._strokeText {
+  -webkit-text-stroke: 1px black;
+  -webkit-text-fill-color: rgba(0, 0, 0, 0);
+}
+._imageResponsiveContainer {
+  display: none;
+}
+
+@include responsive(md) {
+  ._selectBox{
+    display: block;
+    margin-top: 1rem;
+  }
+  ._select{
+    margin: 0
+  }
+  ._mainContainer {
+    flex-direction: column;
+  }
+
+  ._mintButton {
+    font-size: 3vw;
+    padding: 4vw 6vw;
+  }
+  ._textContainer {
+    width: 100%;
+    text-align: center;
+  }
+
+  ._infoText {
+    font-size: 4vw;
+    margin-bottom: 1vw;
+  }
+
+  ._textTitle {
+    text-align: center;
+    font-size: 6vw;
+  }
+
+  ._text {
+    font-size: 3vw;
+  }
+  ._imageContainer {
+    display: none;
+  }
+
+  ._imageResponsiveContainer {
+    display: block;
+    width: 100%;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  ._imageResponsive {
+    width: 90%;
+  }
+}
